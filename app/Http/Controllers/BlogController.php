@@ -31,8 +31,10 @@ class BlogController extends Controller
     public function showBlog($id)
     {
         $blog = Blog::with('author','categories','tags')->findOrFail($id);
+        $categories = $blog->categories;
+        $tags = $blog->tags;
 
-        return view('blog', compact('blog'));
+        return view('blog', compact('blog', 'categories', 'tags'));
     }
 
 
