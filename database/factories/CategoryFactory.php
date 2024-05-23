@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +17,14 @@ class CategoryFactory extends Factory
      * @return array<string, mixed>
      */
     protected $model = Category::class;
+    
     public function definition(): array
     {
+        $name = $this->faker->unique()->word;
+
         return [
-            //
-            'name' => $this->faker->unique()->word(),
-            'slug' => $this->faker->unique()->slug(),
+            'name' => $name,
+            'slug' => Str::slug($name),
         ];
     }
 }

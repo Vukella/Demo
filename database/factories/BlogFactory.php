@@ -23,10 +23,11 @@ class BlogFactory extends Factory
             //
             'user_id' => User::factory(),
             'slug' => $this->faker->unique()->slug(),
-            'title' => $this->faker->unique()->title(),
-            'body' => '<p>' . implode('</p><p>',$this->faker->paragraphs(6)), '</p>',
-            'summary' => '<p>' . implode('</p><p>',$this->faker->paragraphs(1)), '</p>',
-            'published_at' => now()
+            'title' => $this->faker->unique()->sentence(),
+            'thumbnail' => $this->faker->imageUrl(),
+            'body' => '<p>' . implode('</p><p>', $this->faker->paragraphs(4)) . '</p>',
+            'summary' => '<p>' . implode('</p><p>', $this->faker->paragraphs(1)) . '</p>',
+            'published_at' => now(),
 
         ];
     }

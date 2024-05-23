@@ -16,14 +16,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = User::factory()
-            ->has(Blog::factory()->count(3),'blogs')
-            ->create();
+        $users = User::factory(5)->create();
+        $categories = Category::factory(10)->create();
+        $tags = Tag::factory(20)->create();
 
-        $blogs = Blog::factory()
-            ->factory(3)
-            ->for($user)
-                ->create();
+        Blog::factory(50)->make()->each(function($blog) use ($users, $categories, $tags) {
+            $blog->user_id = $users->random()->id;
+            $blog->save();
+
+            $blogCategories = $categories->random(rand(1, 3))->pluck('id');
+            $blog->categories()->attach($blogCategories);
+
+            $blogTags = $tags->random(rand(1, 5))->pluck('id');
+            $blog->tags()->attach($blogTags);
+        });
 
     }
 }

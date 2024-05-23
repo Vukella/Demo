@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Tag;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +17,14 @@ class TagFactory extends Factory
      * @return array<string, mixed>
      */
     protected $model = Tag::class;
-    public function definition(): array
+    
+    public function definition()
     {
+        $name = $this->faker->unique()->word;
+
         return [
-            //
-            'name' => $this->faker->unique()->word(),
-            'slug' => $this->faker->unique()->slug(),
+            'name' => $name,
+            'slug' => Str::slug($name),
         ];
     }
 }
