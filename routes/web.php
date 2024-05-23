@@ -3,21 +3,8 @@
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/blogs', function () {
-    return view('blogs',[
-        'blogs' => Blog::all()
-    ]);
-});
-
-Route::get('/blogs/{blog:slug}', function ($id) {
-    return view('blog-details');
-})->where('id', '[0-9]+');
-
-Route::get('/search', function(Request $request){
-
-});
+Route::get('/', [BlogController:: class, 'index'])->name('home');
+Route::get('/blogs', [BlogController:: class, 'showAllBlogs'])->name('blogs.index');
+Route::get('/blog/{id}', [BlogController:: class, 'showBlog'])->name('blog.show');
