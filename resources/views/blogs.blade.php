@@ -19,33 +19,15 @@
             <div class="col-lg-8">
                 <div class="row">
                     @foreach ($blogs as $blog)
-                        <x-single_blog_grid_item>
-                            {{$blog['title']}}
-                        </x-single_blog_grid_item>    
+                        <x-single_blog_grid_item :blog="$blog" />
                     @endforeach
-                    {{--
-                    <x-single_blog_grid_item>
-                        Depart do be so he enough talent. Sociable for
-                    </x-single_blog_grid_item>
-                    <x-single_blog_grid_item>
-                        At name no an what Pressed my by do affixed
-                    </x-single_blog_grid_item>
-                    <x-single_blog_grid_item>
-                        Do am he horrible distance marriage so alth
-                    </x-single_blog_grid_item>
-                    <x-single_blog_grid_item>
-                        His many same been well can high that did law
-                    </x-single_blog_grid_item>
-                    <x-single_blog_grid_item>
-                        He into walk roof made tall cold he jelings
-                    </x-single_blog_grid_item>
-                    --}}
-                    <x-blog_pagination></x-blog_pagination>
+
+                    <x-blog_pagination/>
                 </div>
             </div>
-        <x-widget_area>
+        <x-widget_area :categories="$categories" :tags="$tags"/>
             
-        </x-widget_area>
+        
     </div>
 </div>
 

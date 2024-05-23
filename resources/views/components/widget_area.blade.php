@@ -14,12 +14,10 @@
         <div class="widget widget_categories"><!-- widget  -->
             <h4 class="widget-title">Categories</h4>
             <ul>
-                <li class="cat-item"><a href="#">Lifestyle</a></li>
-                <li class="cat-item"><a href="#">Travel</a></li>
-                <li class="cat-item"><a href="#">Fashion</a></li>
-                <li class="cat-item"><a href="#">Music</a></li>
-                <li class="cat-item"><a href="#">Branding</a></li>
-                <li class="cat-item"><a href="#">History</a></li>
+                @foreach ($categories as $category)
+                    <li class="cat-item"><a href="#">{{$category->name}}</a></li>    
+                @endforeach
+            
             </ul>
         </div>
         <div class="widget widget_popular_posts"><!-- widget  -->
@@ -59,13 +57,9 @@
         <div class="widget widget_tag_cloud"><!-- widget -->
             <h4 class="widget-title">Tags</h4>
             <div class="tagcloud">
-                <a href="#">Events</a>
-                <a href="#">Love</a>
-                <a href="#">Story</a>
-                <a href="#">Gift</a>
-                <a href="#">Events</a>
-                <a href="#">First Metting</a>
-                <a href="#">Couple</a>
+                @foreach ($tags as $tag)
+                    <a href="#">{{$tag->name}}</a>    
+                @endforeach
             </div>
         </div>
 

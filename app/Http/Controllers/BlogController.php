@@ -12,17 +12,20 @@ class BlogController extends Controller
     //
     public function index()
     {
-        //$categories = Category::all();
-        //$tags = Tag::all();
-
         return view('index');
     }
 
     public function showAllBlogs()
     {
+        $categories = Category::all();
+        $tags = Tag::all();
+
         $blogs = Blog::with('author', 'categories','tags')->latest()->paginate(8);
 
-        return view('blogs', compact('blogs'));
+        return view('blogs', [
+        'blogs' => $blogs, 
+        'categories' => $categories,
+        'tags' => $tags]);
     }
 
     public function showBlog($id)
