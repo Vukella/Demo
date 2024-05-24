@@ -17,8 +17,9 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('title');
             $table->string('thumbnail')->nullable();
-            $table->text('body');
-            $table->text('summary');
+            $table->text('body_one');
+            $table->text('body_two');
+            $table->text('blockquote');
             $table->timestamps();
             $table->timestamp('published_at')->nullable();
 

@@ -25,9 +25,10 @@ class BlogFactory extends Factory
             'slug' => $this->faker->unique()->slug(),
             'title' => $this->faker->unique()->sentence(),
             'thumbnail' => $this->faker->imageUrl(),
-            'body' => '<p>' . implode('</p><p>', $this->faker->paragraphs(4)) . '</p>',
-            'summary' => '<p>' . implode('</p><p>', $this->faker->paragraphs(1)) . '</p>',
-            'published_at' => now(),
+            'body_one' => '<p>' . implode('</p><p>', $this->faker->paragraphs(2)) . '</p>',
+            'body_two' => '<p>' . implode('</p><p>', $this->faker->paragraphs(1)) . '</p>',
+            'blockquote' => $this->faker->unique()->sentence(),
+            'published_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
 
         ];
     }
