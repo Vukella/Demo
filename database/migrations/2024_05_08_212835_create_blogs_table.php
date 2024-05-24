@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('slug')->unique();
             $table->string('title');
             $table->string('thumbnail')->nullable();
@@ -22,8 +22,6 @@ return new class extends Migration
             $table->text('blockquote');
             $table->timestamps();
             $table->timestamp('published_at')->nullable();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
