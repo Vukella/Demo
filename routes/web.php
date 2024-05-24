@@ -7,4 +7,4 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/', [BlogController:: class, 'index'])->name('home');
 Route::get('/blogs', [BlogController:: class, 'showAllBlogs'])->name('blogs.index');
-Route::get('/blog/{id}', [BlogController:: class, 'showBlog'])->name('blog.show');
+Route::get('/blog/{blog:slug}', [BlogController:: class, 'show']);

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head></x-head>
+<x-head/>
 
 <body>
     
-<x-navbar></x-navbar>
+<x-navbar/>
 
 <!-- breadcrumb area start -->
 <x-breadcrumb_area>
@@ -24,7 +24,7 @@
                         <div class="entry-content">
                             <ul class="post-meta">
                                 <li><a href="#"><i class="far fa-calendar-alt"></i> {{$blog->published_at}}</a></li>
-                                <li><a href="#"><i class="far fa-user"></i> {{optional($blog->user)->username ?? 'Unknown author'}}</a></li>
+                                <li><a href="#"><i class="far fa-user"></i> {{$blog->author->name}}</a></li>
                                 <li class="cat"><i class="fas fa-tags"></i>
                                     @foreach ($categories as $category)
                                         <a href="#">{{$category->name}}
@@ -32,11 +32,9 @@
                                     
                             </ul>
                             <h4 class="title">{{$blog->title}}</h4>
-                                {{$blog->body}}
-                            <blockquote>
-                                    {{$blog->summary}}
-                            </blockquote>
-                                {{$blog->body}}
+                            {!! $blog->body_one !!}
+                            <blockquote> {{ $blog->blockquote }} </blockquote>
+                            {!! $blog->body_two !!}
                         </div>
                         <div class="entry-footer"><!-- entry footer -->
                             <div class="left">
@@ -71,19 +69,19 @@
 
 
 <!-- footer area start -->
-<x-footer></x-footer>
+<x-footer/>
 <!-- footer area end -->
 
 <!-- preloader area start -->
-<x-preloader></x-preloader>
+<x-preloader/>
 
   <!-- preloader area end -->
 
   <!-- back to top area start -->
-<x-back_to_top_area></x-back_to_top_area>
+<x-back_to_top_area/>
   <!-- back to top area end -->
 
-<x-scripts></x-scripts>
+<x-scripts/>
 </body>
 
 </html>

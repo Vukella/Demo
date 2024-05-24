@@ -6,9 +6,9 @@
         <div class="content">
             <ul class="post-meta">
                 <li><a href="#">{{$blog->published_at}}</a></li>
-                <li><a href="#">{{ optional($blog->user)->username ?? 'Unknown author' }}</a></li>
+                <li><a href="#">{{$blog->author->name}}</a></li>
             </ul>
-            <h4 class="title"><a href="/blog/{{$blog->id}}">{{$blog->title}}</a></h4>
+            <h4 class="title"><a href="/blog/{{$blog->slug}}">{{$blog->title}}</a></h4>
             <a href="#" class="readmore">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </div><!-- //. single blog grid item -->

@@ -28,9 +28,9 @@ class BlogController extends Controller
         'tags' => $tags]);
     }
 
-    public function showBlog($id)
+    public function show(Blog $blog)
     {
-        $blog = Blog::with('author','categories','tags')->findOrFail($id);
+        
         $categories = $blog->categories;
         $tags = $blog->tags;
 
