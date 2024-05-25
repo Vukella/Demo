@@ -3,7 +3,7 @@
         <div class="responsive-mobile-menu">
             <div class="logo-wrapper">
                 <a href="/" class="logo">
-                    <img src="assets/img/logo.png" alt="logo">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu" 

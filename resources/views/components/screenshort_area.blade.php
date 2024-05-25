@@ -1,6 +1,6 @@
 <section class="screenshort-area">
-    <div class="shape-1"><img src="assets/img/shape/08.png" alt=""></div>
-    <div class="shape-2"><img src="assets/img/shape/09.png" alt=""></div>
+    <div class="shape-1"><img src="{{ asset('assets/img/shape/08.png') }}" alt=""></div>
+    <div class="shape-2"><img src="{{ asset('assets/img/shape/09.png') }}" alt=""></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -15,16 +15,16 @@
         <div class="col-lg-12">
             <div class="screenshort-carousel"><!-- screenshort carousel -->
                 <div class="single-screenshort-item"><!-- single screenshort item -->
-                    <img src="assets/img/screenshort/screen-1.jpg" alt="">
+                    <img src="{{ asset('assets/img/screenshort/screen-1.jpg') }}" alt="">
                 </div><!-- //.single screenshort item -->
                 <div class="single-screenshort-item"><!-- single screenshort item -->
-                    <img src="assets/img/screenshort/screen-2.jpg" alt="">
+                    <img src="{{ asset('assets/img/screenshort/screen-2.jpg') }}" alt="">
                 </div><!-- //.single screenshort item -->
                 <div class="single-screenshort-item"><!-- single screenshort item -->
-                    <img src="assets/img/screenshort/screen-3.jpg" alt="">
+                    <img src="{{ asset('assets/img/screenshort/screen-3.jpg') }}" alt="">
                 </div><!-- //.single screenshort item -->
                 <div class="single-screenshort-item"><!-- single screenshort item -->
-                    <img src="assets/img/screenshort/screen-4.jpg" alt="">
+                    <img src="{{ asset('assets/img/screenshort/screen-4.jpg') }}" alt="">
                 </div><!-- //.single screenshort item -->
             </div><!-- //. screenshort carousel -->
         </div>

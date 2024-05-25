@@ -1,6 +1,6 @@
 <section class="testimonial-area">
-    <div class="shape-1"><img src="assets/img/shape/08.png" alt=""></div>
-    <div class="shape-2"><img src="assets/img/shape/09.png" alt=""></div>
+    <div class="shape-1"><img src="{{ asset('assets/img/shape/08.png') }} " alt=""></div>
+    <div class="shape-2"><img src="{{ asset('assets/img/shape/09.png') }} " alt=""></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -17,7 +17,7 @@
 
                 <div class="single-testimonial-item"><!-- single testimonial item -->
                     <div class="thumb">
-                        <img src="assets/img/testimonial/01.jpg" alt="">
+                        <img src="{{ asset('assets/img/testimonial/01.jpg') }}" alt="">
                     </div>
                    
                     <div class="hover"><!-- hover -->
@@ -33,7 +33,7 @@
                 </div><!-- //. single testimonial item -->
                 <div class="single-testimonial-item"><!-- single testimonial item -->
                     <div class="thumb">
-                        <img src="assets/img/testimonial/02.jpg" alt="">
+                        <img src="{{ asset('assets/img/testimonial/02.jpg') }}" alt="">
                     </div>
                    
                     <div class="hover"><!-- hover -->
@@ -49,7 +49,7 @@
                 </div><!-- //. single testimonial item -->
                 <div class="single-testimonial-item"><!-- single testimonial item -->
                     <div class="thumb">
-                        <img src="assets/img/testimonial/03.jpg" alt="">
+                        <img src="{{ asset('assets/img/testimonial/03.jpg') }}" alt="">
                     </div>
                    
                     <div class="hover"><!-- hover -->

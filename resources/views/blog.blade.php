@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head/>
+<x-head></x-head>
 
 <body>
     
-<x-navbar/>
+<x-navbar></x-navbar>
 
 <!-- breadcrumb area start -->
 <x-breadcrumb_area>
@@ -69,19 +69,19 @@
 
 
 <!-- footer area start -->
-<x-footer/>
+<x-footer></x-footer>
 <!-- footer area end -->
 
 <!-- preloader area start -->
-<x-preloader/>
+<x-preloader></x-preloader>
 
   <!-- preloader area end -->
 
   <!-- back to top area start -->
-<x-back_to_top_area/>
+<x-back_to_top_area></x-back_to_top_area>
   <!-- back to top area end -->
 
-<x-scripts/>
+<x-scripts></x-scripts>
 </body>
 
 </html>

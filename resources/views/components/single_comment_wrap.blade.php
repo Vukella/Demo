@@ -1,6 +1,6 @@
 <div class="single-comment-wrap"><!-- single comment wrap -->
     <div class="thumb">
-        <img src="assets/img/comments/01.jpg" alt="comment images">
+        <img src="{{asset('assets/img/comments/01.jpg')}}" alt="comment images">
        
     </div>
     <div class="content">

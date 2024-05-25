@@ -4,7 +4,7 @@
             <div class="col-lg-6">
                 <div class="img-with-video">
                     <div class="img-wrap">
-                        <img src="assets/img/video-image.jpg" alt="">
+                        <img src="{{ asset('assets/img/video-image.jpg') }}" alt="">
                         <div class="hover">
                             <a href="https://www.youtube.com/watch?v=tdBzJRdy33M" class="video-play-btn mfp-iframe"><i class="fas fa-play"></i></a>
                         </div>

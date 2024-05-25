@@ -1,9 +1,9 @@
 <header class="header-area header-bg" id="home">
-    <div class="shape-1"><img src="assets/img/shape/01.png" alt=""></div>
-    <div class="shape-2"><img src="assets/img/shape/02.png" alt=""></div>
-    <div class="shape-3"><img src="assets/img/shape/03.png" alt=""></div>
+    <div class="shape-1"><img src="{{ asset('assets/img/shape/01.png') }}" alt=""></div>
+    <div class="shape-2"><img src="{{ asset('assets/img/shape/02.png') }}" alt=""></div>
+    <div class="shape-3"><img src="{{ asset('assets/img/shape/03.png') }}" alt=""></div>
 <div class="header-right-image wow zoomIn">
-    <img src="assets/img/mobile-image-4.png" alt="header right image">
+    <img src="{{ asset('assets/img/mobile-image-4.png') }}" alt="header right image">
 </div>
 <div class="container">
     <div class="row">

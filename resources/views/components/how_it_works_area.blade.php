@@ -1,8 +1,8 @@
 <section class="how-it-work-area">
-    <div class="shape-1"><img src="assets/img/shape/08.png" alt=""></div>
-    <div class="shape-2"><img src="assets/img/shape/09.png" alt=""></div>
-    <div class="shape-3"><img src="assets/img/shape/08.png" alt=""></div>
-    <div class="shape-4"><img src="assets/img/shape/09.png" alt=""></div>
+    <div class="shape-1"><img src="{{ asset('assets/img/shape/08.png') }}" alt=""></div>
+    <div class="shape-2"><img src="{{ asset('assets/img/shape/09.png') }}" alt=""></div>
+    <div class="shape-3"><img src="{{ asset('assets/img/shape/08.png') }}" alt=""></div>
+    <div class="shape-4"><img src="{{ asset('assets/img/shape/09.png') }}" alt=""></div>
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -45,7 +45,7 @@
                                 <div class="col-lg-6">
                                     <div class="right-content-area">
                                         <div class="img-wrapper">
-                                            <img src="assets/img/how-it-works-image.png" alt="how it works image">
+                                            <img src="{{ asset('assets/img/how-it-works-image.png') }}" alt="how it works image">
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@
                                 <div class="col-lg-6">
                                     <div class="right-content-area">
                                         <div class="img-wrapper">
-                                            <img src="assets/img/how-it-works-image.png" alt="how it works image">
+                                            <img src="{{ asset('assets/img/how-it-works-image.png') }}" alt="how it works image">
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@
                                 <div class="col-lg-6">
                                     <div class="right-content-area">
                                         <div class="img-wrapper">
-                                            <img src="assets/img/how-it-works-image.png" alt="how it works image">
+                                            <img src="{{ asset('assets/img/how-it-works-image.png') }}" alt="how it works image">
                                         </div>
                                     </div>
                                 </div>

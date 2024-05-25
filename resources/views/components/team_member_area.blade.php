@@ -1,12 +1,12 @@
 <section class="team-member-area" id="team">
     <div class="bg-shape-1">
-        <img src="assets/img/bg/team-shape.png" alt="">
+        <img src="{{ asset('assets/img/bg/team-shape.png') }}" alt="">
     </div>
     <div class="bg-shape-2">
-        <img src="assets/img/bg/contact-map-bg.jpg" alt="">
+        <img src="{{ asset('assets/img/bg/contact-map-bg.jpg') }}" alt="">
     </div>
     <div class="bg-shape-3">
-        <img src="assets/img/bg/contact-mobile-bg.png" alt="">
+        <img src="{{ asset('assets/img/bg/contact-mobile-bg.png') }}" alt="">
     </div>
     <div class="container">
         <div class="row justify-content-center">
@@ -23,7 +23,7 @@
                 <div class="team-carousel"><!-- team carousel -->
                     <div class="single-team-member"><!-- single team member -->
                         <div class="thumb">
-                            <img src="assets/img/team-member/01.jpg" alt="team member image">
+                            <img src="{{ asset('assets/img/team-member/01.jpg') }}" alt="team member image">
                             <div class="hover">
                                 <ul class="social-icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -39,7 +39,7 @@
                     </div><!-- //. single team member -->
                     <div class="single-team-member"><!-- single team member -->
                         <div class="thumb">
-                            <img src="assets/img/team-member/02.jpg" alt="team member image">
+                            <img src="{{ asset('assets/img/team-member/02.jpg') }}" alt="team member image">
                             <div class="hover">
                                 <ul class="social-icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -55,7 +55,7 @@
                     </div><!-- //. single team member -->
                     <div class="single-team-member"><!-- single team member -->
                         <div class="thumb">
-                            <img src="assets/img/team-member/03.jpg" alt="team member image">
+                            <img src="{{ asset('assets/img/team-member/03.jpg') }}" alt="team member image">
                             <div class="hover">
                                 <ul class="social-icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -71,7 +71,7 @@
                     </div><!-- //. single team member -->
                     <div class="single-team-member"><!-- single team member -->
                         <div class="thumb">
-                            <img src="assets/img/team-member/04.jpg" alt="team member image">
+                            <img src="{{ asset('assets/img/team-member/04.jpg') }}" alt="team member image">
                             <div class="hover">
                                 <ul class="social-icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -87,7 +87,7 @@
                     </div><!-- //. single team member -->
                     <div class="single-team-member"><!-- single team member -->
                         <div class="thumb">
-                            <img src="assets/img/team-member/05.jpg" alt="team member image">
+                            <img src="{{ asset('assets/img/team-member/05.jpg') }}" alt="team member image">
                             <div class="hover">
                                 <ul class="social-icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

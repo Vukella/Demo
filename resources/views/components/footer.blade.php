@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget about_widget">
-                        <a href="index.html" class="footer-logo"><img src="assets/img/logo-white.png" alt=""></a>
+                        <a href="index.html" class="footer-logo"><img src="{{ asset('assets/img/logo-white.png') }}" alt=""></a>
                         <p>Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. </p>
                         <ul class="social-icon">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
