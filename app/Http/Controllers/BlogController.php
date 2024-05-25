@@ -22,10 +22,14 @@ class BlogController extends Controller
 
         $blogs = Blog::with('author', 'categories','tags')->latest()->paginate(8);
 
+        $totalPages = $blogs->lastPage();
+
         return view('blogs', [
         'blogs' => $blogs, 
         'categories' => $categories,
-        'tags' => $tags]);
+        'tags' => $tags,
+        'totalPages' => $totalPages
+        ]);
     }
 
     public function show(Blog $blog)

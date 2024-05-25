@@ -22,10 +22,10 @@
                         <x-single_blog_grid_item :blog="$blog" />
                     @endforeach
 
-                    <x-blog_pagination/>
+                    <x-blog_pagination :totalPages="$totalPages" />
                 </div>
             </div>
-        <x-widget_area :categories="$categories" :tags="$tags"/>
+        <x-widget_area :categories="$categories" :tags="$tags" />
             
         
     </div>
