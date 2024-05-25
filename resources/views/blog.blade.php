@@ -62,7 +62,7 @@
                         <x-comment_form_wrap/>
                     </div> 
             </div>
-            <x-widget_area :categories="$categories" :tags="$tags"/>
+            <x-widget_area :categories="$allCategories" :tags="$allTags"/>
         </div>
     </div>
 </div>

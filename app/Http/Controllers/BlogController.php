@@ -34,7 +34,10 @@ class BlogController extends Controller
         $categories = $blog->categories;
         $tags = $blog->tags;
 
-        return view('blog', compact('blog', 'categories', 'tags'));
+        $allCategories = Category::all();
+        $allTags = Tag::all();
+
+        return view('blog', compact('blog', 'categories', 'tags', 'allCategories', 'allTags'));
     }
 
 
