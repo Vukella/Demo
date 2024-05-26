@@ -1,9 +1,13 @@
+@php
+    $currentPath = request()->path();
+@endphp
+
 <nav class="navbar navbar-area navbar-expand-lg nav-absolute white nav-style-01">
     <div class="container nav-container">
         <div class="responsive-mobile-menu">
             <div class="logo-wrapper">
                 <a href="/" class="logo">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
+                    <img src="{{ asset(str_contains($currentPath, 'blog') ? 'assets/img/logo-white.png' : 'assets/img/logo.png') }}" alt="logo">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu" 
