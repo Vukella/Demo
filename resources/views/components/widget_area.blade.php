@@ -15,7 +15,7 @@
             <h4 class="widget-title">Categories</h4>
             <ul>
                 @foreach ($categories as $category)
-                    <li class="cat-item"><a href="#">{{$category->name}}</a></li>    
+                    <li class="cat-item"><a href="{{ url('blogs/category/' . $category->name) }}">{{$category->name}}</a></li>    
                 @endforeach
             
             </ul>
@@ -56,7 +56,7 @@
             <h4 class="widget-title">Tags</h4>
             <div class="tagcloud">
                 @foreach ($tags as $tag)
-                    <a href="#">{{$tag->name}}</a>    
+                    <a href="{{ url('blogs/tag/' . $tag->name) }}">{{$tag->name}}</a>    
                 @endforeach
             </div>
         </div>
